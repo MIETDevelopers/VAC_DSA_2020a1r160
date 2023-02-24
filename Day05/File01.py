@@ -1,4 +1,4 @@
-# Linear search python.
+# Linear search in python.
 lst = [5, 4, 3, 2, 11, 7, 9, 12]
 class LinearSearch:
     def search(self, lst, keyValue):

@@ -1,4 +1,4 @@
-# Binary search
+# Binary search in python.
 class BinarySearch:
     def searchMethod(self, lst, low, high, keyValue):
         self.lst = sorted(lst)
