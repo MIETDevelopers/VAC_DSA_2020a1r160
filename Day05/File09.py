@@ -1,0 +1,1 @@
+#The first line of input contains the integer K(1<-K<-45) , the number of times Mirko pressed the button.
