@@ -14,4 +14,5 @@ def count_letters(K):
     num_a = word.count("A")
     num_b = word.count("B")
     return num_a, num_b
-print(count_letters(10))
+n = int(input())
+print(count_letters(n))
