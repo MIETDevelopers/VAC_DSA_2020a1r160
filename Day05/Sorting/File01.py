@@ -1,4 +1,4 @@
-#Selection sort.
+#Selection sort in python.
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
