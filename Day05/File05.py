@@ -12,6 +12,6 @@ def InterpolationSearch(lis,l,h,n):
             return InterpolationSearch(lis,l,pos-1,n)
         
     else:
-        return -1
-lis=[2,4,6,8,9,10,19,20,22, 23,28,29]
-print(InterpolationSearch(lis,0,len(lis)-1,29))
+        return 'Not found'
+lis=[2,4,6,8,9,10,19,20,22]
+print(InterpolationSearch(lis,0,len(lis)-1,7))
