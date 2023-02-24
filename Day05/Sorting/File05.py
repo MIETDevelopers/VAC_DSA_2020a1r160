@@ -1,5 +1,5 @@
 #Insertion sort in python
-lst = [4,8,3,2,6,1]
+lst = [4,5,3,2,6,1]
 def insertion_sort(lst):
     for i in range(1, len(lst)):
         key = lst[i]
