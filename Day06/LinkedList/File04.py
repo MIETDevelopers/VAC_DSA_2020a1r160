@@ -1,3 +1,4 @@
+#Doubly linked list.
 class Node:
     def __init__(self, data):
         self.data = data
@@ -7,13 +8,6 @@ class Node:
 class Linkedlist:
     def __init__(self):
         self.head = None
-        
-    # def push(self, data):
-    #     New = Node(data)
-    #     temp = self.head.next
-    #     self.head.next = New
-    #     New.next =  temp
-    #     New.prev =self.head
     def insert(self, head, data):
         temp = head
         curr = Node(data)
