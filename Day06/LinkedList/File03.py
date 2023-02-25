@@ -23,13 +23,13 @@ class LinkedList:
         new_node.next = self.head
         self.head = new_node
 
-    def insert_after_node(self, prev_node, data):
-        if not prev_node:
-            print("Previous node is not in the list")
+    def insert_after_node(self, previous_node, data):
+        if not previous_node:
+            print("previousious node is not in the list")
             return
         new_node = Node(data)
-        new_node.next = prev_node.next
-        prev_node.next = new_node
+        new_node.next = previous_node.next
+        previous_node.next = new_node
 
     def delete_node(self, key):
         curr_node = self.head
@@ -37,36 +37,36 @@ class LinkedList:
             self.head = curr_node.next
             curr_node = None
             return
-        prev_node = None
+        previous_node = None
         while curr_node and curr_node.data != key:
-            prev_node = curr_node
+            previous_node = curr_node
             curr_node = curr_node.next
         if curr_node is None:
             return
-        prev_node.next = curr_node.next
+        previous_node.next = curr_node.next
         curr_node = None
 
     def swap_nodes(self, key_1, key_2):
         if key_1 == key_2:
             return
-        prev_node_1 = None
+        previous_node_1 = None
         curr_node_1 = self.head
         while curr_node_1 and curr_node_1.data != key_1:
-            prev_node_1 = curr_node_1
+            previous_node_1 = curr_node_1
             curr_node_1 = curr_node_1.next
-        prev_node_2 = None
+        previous_node_2 = None
         curr_node_2 = self.head
         while curr_node_2 and curr_node_2.data != key_2:
-            prev_node_2 = curr_node_2
+            previous_node_2 = curr_node_2
             curr_node_2 = curr_node_2.next
         if not curr_node_1 or not curr_node_2:
             return
-        if prev_node_1:
-            prev_node_1.next = curr_node_2
+        if previous_node_1:
+            previous_node_1.next = curr_node_2
         else:
             self.head = curr_node_2
-        if prev_node_2:
-            prev_node_2.next = curr_node_1
+        if previous_node_2:
+            previous_node_2.next = curr_node_1
         else:
             self.head = curr_node_1
         curr_node_1.next, curr_node_2.next = curr_node_2.next, curr_node_1.next
