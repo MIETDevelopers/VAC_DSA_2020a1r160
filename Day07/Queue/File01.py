@@ -36,12 +36,29 @@ class Queue:
             stack.append(self.dequeue())
         while stack:
             self.enqueue(stack.pop())
+    
+    def sort(self):
+        temp_queue = Queue()
+
+        while not self.is_empty():
+            # find smallest element in queue
+            smallest = self.items[0]
+            for item in self.items:
+                if item < smallest:
+                    smallest = item
+
+            self.items.remove(smallest)
+            temp_queue.enqueue(smallest)
+
+        while not temp_queue.is_empty():
+            self.enqueue(temp_queue.dequeue())
+
+        return self.items
 
 q = Queue()
 
-q.enqueue(3)
-q.enqueue(2)
-q.enqueue(1)
+q.enqueue(69)
+q.enqueue(40)
+q.enqueue(99)
 print(q.show())
-q.reverse()
-print(q.show())
+print(q.sort())
