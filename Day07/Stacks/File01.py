@@ -17,6 +17,9 @@ class Stack:
 
     def peek(self):
         if not self.is_empty():
+            return self.items[-1]
+    def peekWhole(self):
+        if not self.is_empty():
             return self.items
 
     def size(self):
@@ -26,6 +29,7 @@ stk = Stack()
 stk.push(1)
 stk.push(2)
 stk.push(3)
+print(stk.peekWhole())
 print(stk.peek())
 print(stk.pop())
 print(stk.peek())
