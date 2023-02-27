@@ -28,15 +28,20 @@ class Queue:
         return self.items[-1] 
     
     def rear(self):
-        return self.items[0] 
+        return self.items[0]
+
+    def reverse(self):
+        stack = []
+        while not self.is_empty():
+            stack.append(self.dequeue())
+        while stack:
+            self.enqueue(stack.pop())
 
 q = Queue()
 
-q.enqueue(10)
-q.enqueue(20)
-q.enqueue(30)
-print(q.front())
-print(q.rear())
+q.enqueue(3)
+q.enqueue(2)
+q.enqueue(1)
 print(q.show())
-print(q.dequeue())
+q.reverse()
 print(q.show())
