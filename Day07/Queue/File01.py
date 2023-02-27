@@ -25,10 +25,10 @@ class Queue:
             return self.items
     
     def front(self):
-        return self.items[0] 
+        return self.items[-1] 
     
     def rear(self):
-        return self.items[-1] 
+        return self.items[0] 
 
 q = Queue()
 
