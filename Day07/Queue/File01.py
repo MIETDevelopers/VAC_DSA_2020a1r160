@@ -23,12 +23,20 @@ class Queue:
     def show(self):
         if not self.is_empty():
             return self.items
+    
+    def front(self):
+        return self.items[0] 
+    
+    def rear(self):
+        return self.items[-1] 
 
 q = Queue()
 
 q.enqueue(10)
 q.enqueue(20)
 q.enqueue(30)
+print(q.front())
+print(q.rear())
 print(q.show())
 print(q.dequeue())
 print(q.show())
