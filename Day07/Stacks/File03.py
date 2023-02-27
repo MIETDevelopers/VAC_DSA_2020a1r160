@@ -19,6 +19,7 @@ class Stack:
     def size(self):
         return len(self.items)
 
+
     def reverse(self):
         temp_stack = Stack()
         while not self.is_empty():
