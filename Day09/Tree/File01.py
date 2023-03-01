@@ -23,6 +23,5 @@ root.left.right = TreeNode(5)
 root.right.left = TreeNode(6)
 root.right.right = TreeNode(7)
 
-# Traverse the binary tree using inorderTraversal
 result = inorderTraversal(root)
 print(result) 
