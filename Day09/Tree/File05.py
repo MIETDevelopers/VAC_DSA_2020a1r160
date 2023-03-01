@@ -64,5 +64,5 @@ def evaluate_expression(expression):
         operands.push(operator)
 
     return operands.pop().evaluate()
-
-print(evaluate_expression("4+(3*5)-8/2"))
+inp = str(input())
+print(evaluate_expression(inp))
