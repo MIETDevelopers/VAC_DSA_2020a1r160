@@ -101,3 +101,4 @@ if __name__ == '__main__':
     print()
     cll.delete_node(3)
     cll.print_list()
+    #a stack is a linear data structure that stores a objects in last in first out, or vice versa manner.
