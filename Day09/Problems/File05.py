@@ -10,5 +10,4 @@ def format_string(input_string):
     return formatted_string
 
 input_string = "ThePairOfShoeCostedSomeBucks"
-formatted_string = format_string(input_string)
-print(formatted_string)
+print(format_string(input_string))
