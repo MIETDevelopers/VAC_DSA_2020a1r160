@@ -6,7 +6,7 @@ class Graph:
         for v in vertices:
             self.adj_list[v] = []
 
-    def add_edge(self, u, v):
+    def addEdge(self, u, v):
         self.adj_list[u].append(v)
 
     def BFS(self, queue, visited):
@@ -28,9 +28,11 @@ class Graph:
         visited.add(start_node)
         self.BFS(queue, visited)
 
-g = Graph([1, 2, 3, 4, 5])
-g.add_edge(1, 2)
-g.add_edge(1, 3)
-g.add_edge(2, 4)
-g.add_edge(2, 5)
-g.BFS_traversal(1)
+g = Graph([0, 1, 2, 3, 4])
+g.addEdge(0,1)
+g.addEdge(0,2)
+g.addEdge(1,3)
+g.addEdge(1,2)
+g.addEdge(2,4)
+g.addEdge(3,4)
+g.BFS_traversal(0)
