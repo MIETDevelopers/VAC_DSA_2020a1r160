@@ -4,7 +4,7 @@ class Graph:
         self.V = V
         self.adj = [[] for i in range(V)]
 
-    def add_edge(self, src, dest):
+    def addEdge(self, src, dest):
         self.adj[src].append(dest)
     
     def BFS(self, start):
@@ -21,10 +21,10 @@ class Graph:
                     visited[i] = True
 
 g = Graph(5)
-g.add_edge(0,1)
-g.add_edge(0,2)
-g.add_edge(1,3)
-g.add_edge(1,2)
-g.add_edge(2,4)
-g.add_edge(3,4)
+g.addEdge(0,1)
+g.addEdge(0,2)
+g.addEdge(1,3)
+g.addEdge(1,2)
+g.addEdge(2,4)
+g.addEdge(3,4)
 g.BFS(0)
