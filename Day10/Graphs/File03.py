@@ -2,10 +2,10 @@
 class Graph:
     def __init__(self, V):
         self.V = V
-        self.adj = [[] for i in range(V)]
+        self.graph = [[] for i in range(V)]
 
     def addEdge(self, src, dest):
-        self.adj[src].append(dest)
+        self.graph[src].append(dest)
     
     def BFS(self, start):
         visited = [False] * self.V
@@ -15,7 +15,7 @@ class Graph:
         while queue:
             s = queue.pop(0)
             print(s, end=" -> ")
-            for i in self.adj[s]:
+            for i in self.graph[s]:
                 if visited[i] == False:
                     queue.append(i)
                     visited[i] = True
