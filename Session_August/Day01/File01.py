@@ -27,6 +27,24 @@ implement by using
 memorization
 tabulation(dynamic programming)
 
+
+algorithm for dynamic programming approach:
+
+def miet (i, j):
+    if(a[i] == b[j]):
+        return 1+miet(i-1, j-1)
+    else:
+        return mx(miet(i-1, j), miet(i, j-1))
+
+
+algorithm for Recursion:
+def miet(i,j):
+    if(a[i] == '\0 || b[j] == '\0):
+        return 0
+    elif(a[i] == b[j]):
+        return 1+miet(i-1, j-1)
+    else:
+        return max(miet(i-1, j), miet(i, j-1))
     """
     
     
