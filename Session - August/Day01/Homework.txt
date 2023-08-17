@@ -17,3 +17,6 @@ solution question 2:
 
 j8 j5  j9 j3 j4 j2 J1
 200 300 100 250 350 450 400  =  2050
+
+
+
