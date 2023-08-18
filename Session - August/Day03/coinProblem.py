@@ -19,3 +19,4 @@ amount_Inp = int(input("Enter the amount: "))
 result, coins_used = coinProblem(dict0, amount_Inp)
 print(f"Minimum number of coins required: {result}")
 print(f"Coins used: {coins_used}")
+
