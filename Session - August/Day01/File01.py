@@ -1,4 +1,4 @@
-print(chr(3172))
+#print(chr(3172))
 """_summary_
     range for data types in C
 
@@ -8,7 +8,7 @@ unsigned - 0 to 4294967295
 ASCII Values
  a - z = 97 to 122
 A- Z  = 65 to 90
-0-9 = 48 to 57
+0-9 = 48 to 57 
 space bar = 32
 
 
@@ -37,14 +37,33 @@ def miet (i, j):
         return mx(miet(i-1, j), miet(i, j-1))
 
 
-algorithm for Recursion:
-def miet(i,j):
-    if(a[i] == '\0 || b[j] == '\0):
-        return 0
-    elif(a[i] == b[j]):
-        return 1+miet(i-1, j-1)
-    else:
-        return max(miet(i-1, j), miet(i, j-1))
-    """
+
+# algorithm for Recursion:
+# def miet(i,j):
+#     if(a[i] == '\0 || b[j] == '\0):
+#         return 0
+#     elif(a[i] == b[j]):
+#         return 1+miet(i-1, j-1)
+#     else:
+#         return max(miet(i-1, j), miet(i, j-1))
+#     """
     
     
+
+
+#homework
+
+# longest palindrome subsequence
+# longest commmon substring
+
+
+#backtracking algorithm
+
+# def jobschedule(jobs, time, N):
+#     maxval = 0
+
+#     for i in range(N):
+#         temp = {}
+#         for j in range(N-1):
+a = 4
+print(str(21-a) + " Lemons needed " if a<21 else "suffecient lemons" )
