@@ -37,6 +37,7 @@ def miet (i, j):
         return mx(miet(i-1, j), miet(i, j-1))
 
 
+<<<<<<< HEAD
 
 # algorithm for Recursion:
 # def miet(i,j):
@@ -47,6 +48,29 @@ def miet (i, j):
 #     else:
 #         return max(miet(i-1, j), miet(i, j-1))
 #     """
+=======
+algorithm for Recursion:
+def miet(i,j):
+    if(a[i] == '\0 || b[j] == '\0'):
+        return 0
+    elif(a[i] ==  b[j]):
+        return 1+miet(i+1, j+1)
+    else:
+        return max(miet(i-1, j), miet(i, j-1))
+    
+    0  1 2 3 4
+    1
+    2
+    
+    
+    """
+"""
+Home work 
+longest prindrome subsequences
+longest common substring
+
+"""
+>>>>>>> df784b1c07e860a578260a5cc65500cd37b4e6bc
     
     
 
