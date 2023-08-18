@@ -14,7 +14,7 @@ def coinProblem(coinDict, amount):
                 minCoinList = coinList + [i]
         return minCoins, minCoinList
 
-dict0 = {1: 4, 2: 1, 5: 100}
+dict0 = {1: 100, 2: 100, 5: 100}
 amount_Inp = int(input("Enter the amount: "))
 result, coins_used = coinProblem(dict0, amount_Inp)
 print(f"Minimum number of coins required: {result}")
