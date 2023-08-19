@@ -1,5 +1,5 @@
 def zeller_day(k, m, year):
-    if(k < 1 or m < 1 or m>12 or year < 1):
+    if(k < 1 or m < 1 or m>12 or year < 1900):
         return -1
     if (m == 1):
         m = 13
@@ -29,7 +29,7 @@ days = ["saturday", "sunday", "monday", "tuesday", "wednesday", "thursday", "fri
 print("Day: ")
 day = zeller_day(k, month, year)
 if (day == -1):
-    print("Day does not exist")
+    print("Day does not exist or can't find day")
 else:
     print(days[day])
     
