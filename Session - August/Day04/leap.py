@@ -10,6 +10,12 @@ def is_leap_year(year):
     else:
         return False
 
+def get_days_in_month(month, year):
+    days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    if is_leap_year(year) and month == 2:
+        return 29
+    return days_in_month[month]
+
 def zellers_congruence(day, month, year):
     if month < 3:
         month += 12
@@ -26,6 +32,13 @@ def get_day_name(day_of_week):
 def main():
     date_input = input("Enter a date in the format DD/MM/YYYY: ")
     day, month, year = map(int, date_input.split('/'))
+    
+    if month < 1 or month > 12:
+        print("Invalid month.")
+        return
+    if day < 1 or day > get_days_in_month(month, year):
+        print("Invalid day.")
+        return
     
     if is_leap_year(year):
         print(f"{year} is a leap year.")
