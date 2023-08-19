@@ -2,7 +2,7 @@
 # Date: Sept 19 2023
 # K=Date, M=Month, c-First Two digit s of year, d-Last two digits of year
 #A program to find out the day at the user mentioned date using zelth calender, where March is 1st month of the year & feb is 12th month of year, use variables as: K=Date, M=Month, c=First Two digit s of year, d=Last two digits of year
-def zellers_congruence(K, M, c, d):
+def apna_calender(K, M, c, d):
     if M in [1, 2]:
         M += 12
         d -= 1
@@ -26,7 +26,7 @@ M = int(input("Enter the month (March is 1, February is 12): "))
 c = int(input("Enter the first two digits of the year: "))
 d = int(input("Enter the last two digits of the year: "))
 
-day_of_week = zellers_congruence(K, M, c, d)
+day_of_week = apna_calender(K, M, c, d)
 month_name = month_names[M]
 
 print(f"{day_of_week}.")
