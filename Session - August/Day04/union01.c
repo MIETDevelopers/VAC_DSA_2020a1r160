@@ -1,7 +1,7 @@
 #include<stdio.h>
-struct Apple{
-    int a;
-    float b;
+union Apple{
+    int a[300];
+    float b[100];
     char c[101];
 }a1, a2;
 int main(){
