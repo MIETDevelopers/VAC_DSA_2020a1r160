@@ -33,8 +33,3 @@ if (day == -1):
 else:
     print(days[day])
     
-    
-    
-
-
-
