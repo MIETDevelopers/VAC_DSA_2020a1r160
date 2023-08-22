@@ -16,3 +16,5 @@ def input_dynamic_tree():
 def main():
     tree = input_dynamic_tree()
     print_left_side_of_tree(tree)
+
+    
