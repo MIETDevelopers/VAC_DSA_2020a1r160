@@ -17,12 +17,12 @@ def buildTree(height):
         
         left_val = int(input(f"Enter left child value for {node.val}: "))
         if left_val != -1:
-            node.left = TreeNode(left_val)
+            node.left = TreeNode(left_val) # type: ignore
             queue.append(node.left)
         
         right_val = int(input(f"Enter right child value for {node.val}: "))
         if right_val != -1:
-            node.right = TreeNode(right_val)
+            node.right = TreeNode(right_val) # type: ignore
             queue.append(node.right)
         
         level += 1
