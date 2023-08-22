@@ -1,5 +1,4 @@
 #solid
-#hollow
 
 # star lower diagonal triangle 
 n = int(input("Enter n: "))
@@ -82,3 +81,45 @@ for i in range(2, py2 + 1):
     for j in range(2 * i - 1):
         print("*", end="")
     print()
+
+
+# diamond
+
+# hollow patterns
+#hollow right angled triangle
+
+def print_half_hollow_pattern(height):
+    for i in range(1, height + 1):
+        if i == 1 or i == height:
+            print("* " * i)
+        else:
+            print("* " + "  " * (i - 2) + "* ")
+
+height = int(input("Enter the height of the pyramid: "))
+print_half_hollow_pattern(height)
+
+#hollow pyramid
+
+def print_hollow_pyramid(height):
+    for i in range(1, height + 1):
+        if i == 1 or i == height:
+            print(" " * (height - i) + "* " * i)
+        else:
+            print(" " * (height - i) + "* " + "  " * (i - 2) + "* ")
+
+height = int(input("Enter the height of the pyramid: "))
+print_hollow_pyramid(height)
+
+
+def hollow_pyramid_alpha(height):
+    alphabet = ord('A')
+    for i in range(0, height):
+        if i == 0:
+            print(" " * (height - i - 1) + chr(current_char))
+        else:
+            spaces = " " * (2 * i - 1)
+            print(" " * (height - i - 1) + chr(current_char) + spaces + chr(current_char))
+        current_char += 1
+ 
+height = int(input("Enter height: "))
+print(hollow_pyramid_alpha(height))           
