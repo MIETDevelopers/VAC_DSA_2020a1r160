@@ -26,3 +26,19 @@ for i in range(1, n2+1):
     for j in range(n2-i+1):
         print("*", end ="")
     print("")
+    
+# for lower Left+ lower right triangle
+
+n3 = int((input("Enter n3: ")))
+
+
+for i in range(1, n3+1):
+    for j in range(i):
+        print("*", end = " ")
+    for j in range(n3-i+1):
+        print(" ", end= " ")
+    for j in range(n3 -i+1):
+        print(" ", end= " ")
+    for j in range(i):
+        print("*", end = " ")
+    print()

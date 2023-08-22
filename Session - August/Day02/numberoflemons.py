@@ -11,8 +11,14 @@ without control or conditional statements
 
 """
 
-lemon =  input("Enter the number of lemons you have")
+lemon =  int(input("Enter the number of lemons you have"))
 
-print("you need to buy " + str(21-lemon) +  "more lemons" if lemon<21 else "you have "+ str(lemon - 21) +"more lemons" 
-      if 21>lemon else "you have sufficient lemons" 
-      if lemon == 21 else "")
+message = ""
+if lemon < 21:
+    message = "you need to buy " + str(21 - lemon) + " more lemons"
+elif lemon > 21:
+    message = "you have " + str(lemon - 21) + " more lemons"
+else:
+    message = "you have sufficient lemons"
+    
+print(message)
