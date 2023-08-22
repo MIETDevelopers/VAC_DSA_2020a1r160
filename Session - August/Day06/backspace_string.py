@@ -7,11 +7,10 @@ def backspaceCompare(S, T):
             elif stack:
                 stack.pop()
         return ''.join(stack)
-    
+
     return build_string(S) == build_string(T)
 
 
 S = input("S: ")
 T = input("T: ")
 print(backspaceCompare(S, T)) 
-
