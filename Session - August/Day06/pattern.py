@@ -46,7 +46,7 @@ for i in range(1, n3+1):
 
 
 # pyramid
-
+print("Pyramid")
 py = int(input("Enter n:"))
 for i in range(1, py + 1):
     for j in range(py-i):
@@ -56,6 +56,7 @@ for i in range(1, py + 1):
     print()
         
 # reverse pyramid
+print("Reverse pyramid")
 py1 = int(input("Enter n: "))
 for i in range(py1, 0, -1):
     for j in range(py1 - i):
@@ -65,6 +66,7 @@ for i in range(py1, 0, -1):
     print()
 
 # hourglass
+print("Hourglass")
 
 py2 = int(input("Enter n: "))
 for i in range(py2, 0, -1):

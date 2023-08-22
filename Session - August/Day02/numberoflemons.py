@@ -14,6 +14,7 @@ without control or conditional statements
 lemon =  int(input("Enter the number of lemons you have"))
 
 message = ""
+
 if lemon < 21 and lemon > 0:
     message = "you need to buy " + str(21 - lemon) + " more lemons"
 elif lemon > 21:
