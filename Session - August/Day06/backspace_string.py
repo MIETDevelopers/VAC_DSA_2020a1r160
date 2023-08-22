@@ -1,11 +1,11 @@
 def backspaceCompare(S, T):
     def build_string(s):
-        lis= []
+        stack= []
         for char in s:
             if char != '#':
-                lis.append(char)
-            elif lis:
-                lis.pop()
+                stack.append(char)
+            elif stack:
+                stack.pop()
         return ''.join(stack)
     
     return build_string(S) == build_string(T)
