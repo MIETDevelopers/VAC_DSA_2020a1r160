@@ -1,16 +1,26 @@
-def deci_to_bcd(n):
-    if n==0:
-        return 0
-    else:
-        return (n%2)+10*deci_to_bcd(n//2)
-    
-def bcd_to_deci(n):
-    if n==0:
-        return 0
-    else:
-        return (n%10)+2*bcd_to_deci(n//10)
+N = int(input())
+S = list(input())
+Cash = int(input())
+A = int(input())
+B = int(input())
 
-n=int(input("Enter a number: "))
-print(deci_to_bcd(n))
-n1=int(input("Enter a number: "))
-print(bcd_to_deci(n1))
+def swap():
+   global Cash
+   Rs = S.copy()
+   S[S.index('1')], S[''.join(S).rindex('0')] = S[''.join(S).rindex('0')], S[S.index('1')]
+   if Rs == S:
+       flip()
+   else:
+       Cash -= A
+
+def flip():
+   global Cash
+   S[S.index('1')] = '0'
+   Cash -= B
+
+while Cash > A or Cash > B:
+   if A < B and '0' in S:
+       swap()
+   else:
+       flip()
+print(int(''.join(S), 2))
