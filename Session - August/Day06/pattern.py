@@ -43,3 +43,40 @@ for i in range(1, n3+1):
     for j in range(i):
         print("*", end = " ")
     print()
+
+
+# pyramid
+
+py = int(input("Enter n:"))
+for i in range(1, py + 1):
+    for j in range(py-i):
+        print(" ", end= " ")
+    for j in range(2*i - 1):
+        print("*", end=" ")
+    print()
+        
+# reverse pyramid
+py1 = int(input("Enter n: "))
+for i in range(py1, 0, -1):
+    for j in range(py1 - i):
+        print(" ", end=" ")
+    for j in range(2 * i - 1):
+        print("*", end=" ")
+    print()
+
+# hourglass
+
+py2 = int(input("Enter n: "))
+for i in range(py2, 0, -1):
+    for j in range(py2 - i):
+        print(" ", end="")
+    for j in range(2 * i - 1):
+        print("*", end="")
+    print()
+    
+for i in range(2, py2 + 1):
+    for j in range(py2 - i):
+        print(" ", end="")
+    for j in range(2 * i - 1):
+        print("*", end="")
+    print()
