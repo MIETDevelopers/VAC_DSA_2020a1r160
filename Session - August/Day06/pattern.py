@@ -26,7 +26,7 @@ for i in range(1, n2+1):
     for j in range(n2-i+1):
         print("*", end ="")
     print("")
-<<<<<<< HEAD
+
     
 # for lower Left+ lower right triangle
 
@@ -43,5 +43,3 @@ for i in range(1, n3+1):
     for j in range(i):
         print("*", end = " ")
     print()
-=======
->>>>>>> 8e755cb062085a1e7b3e49c93a2c0144cda12d87
