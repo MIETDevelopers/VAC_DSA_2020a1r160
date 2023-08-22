@@ -6,7 +6,7 @@ def backspaceCompare(S, T):
                 lis.append(char)
             elif lis:
                 lis.pop()
-        return ''.join(stack)
+        return ''.join(lis)
     
     return build_string(S) == build_string(T)
 
@@ -14,4 +14,3 @@ def backspaceCompare(S, T):
 S = input("S: ")
 T = input("T: ")
 print(backspaceCompare(S, T)) 
-
