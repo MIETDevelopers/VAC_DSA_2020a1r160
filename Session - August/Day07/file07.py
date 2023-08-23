@@ -1,4 +1,4 @@
-# A program to represent a full binary tree
+# A program to represent a degenerate binary tree
 class Node:
     def __init__(self,data):
         self.data=data
