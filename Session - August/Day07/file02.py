@@ -23,6 +23,6 @@ word_list = input("Enter a list of words separated by commas: ").split(", ")
 acronym = input("Enter the acronym to check: ")
 
 if is_acronym(word_list, acronym):
-    print("Yes, it is an acronym.")
+    print("Yes")
 else:
-    print("No, it is not an acronym.")
+    print("No")
