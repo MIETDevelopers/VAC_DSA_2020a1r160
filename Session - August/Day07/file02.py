@@ -20,6 +20,8 @@ def is_acronym(word_list, acronym):
     return formed_acronym == acronym
 
 word_list = input("Enter a list of words (comma separated): ").split(", ")
+word_list = [word.lower() for word in word_list]
+
 acronym = input("Enter the acronym: ")
 
 if is_acronym(word_list, acronym):
