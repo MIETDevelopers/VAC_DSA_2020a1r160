@@ -24,3 +24,14 @@ ip: hello
 op: hello
 """
 
+def swap_and_reverse(s):
+    words = s.split()
+    for i in range(len(words) - 1):
+        if len(words[i]) == len(words[i + 1]):
+            words[i], words[i + 1] = words[i + 1], words[i]
+            words[i] = words[i][::-1]
+            words[i + 1] = words[i + 1][::-1]
+    return ' '.join(words)
+
+user_input = input("Enter a string: ")
+print(swap_and_reverse(user_input))
