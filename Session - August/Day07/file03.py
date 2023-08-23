@@ -24,6 +24,7 @@ ip: hello
 op: hello
 """
 
+<<<<<<< HEAD
 def reverse_words(s):
     words = s.split()
     equal_length_words = []
@@ -40,6 +41,19 @@ def reverse_words(s):
             i += 1
     
     return ' '.join(equal_length_words)
+=======
+def swap_and_reverse(s):
+    words = s.split(" ")
+    n = len(words)-1
+    for i in range(len(words) - 1):
+        if len(words[i]) == len(words[n-i]):
+            #print(words[i])
+            #print(words[n-i])
+            words[i], words[n-i] = words[n-i], words[i]
+            words[i] = words[i][::-1]
+            words[n - i] = words[n-i][::-1]
+    return ' '.join(words)
+>>>>>>> 67298e2216631c8e415d1ea495790492748a94f5
 
 while True:
     user_input = input("Enter a string (type 'exit' to quit): ")
