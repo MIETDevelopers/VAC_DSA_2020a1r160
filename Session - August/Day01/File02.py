@@ -10,4 +10,10 @@ def LCS(i, j):
         return 1+LCS(i-1, j-1)
     else:
         return max(LCS(i-1, j), LCS(i, j-1))
-print("The length of the longest common subsequence is: ", LCS(len(MainString)-1, len(SubString)-1))
+#print("The length of the longest common subsequence is: ", LCS(len(MainString)-1, len(SubString)-1))
+
+check = LCS(len(MainString)-1, len(SubString)-1)
+if check == 0:
+    print("The substring is not a subsequence.")
+else:
+    print("Substring is a subsequence.")

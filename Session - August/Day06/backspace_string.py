@@ -11,6 +11,6 @@ def backspaceCompare(S, T):
     return build_string(S) == build_string(T)
 
 
-S = input("S: ")
-T = input("T: ")
+S = input("S string: ")
+T = input("T string: ")
 print(backspaceCompare(S, T)) 
