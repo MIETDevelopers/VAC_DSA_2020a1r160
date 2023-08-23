@@ -25,12 +25,15 @@ op: hello
 """
 
 def swap_and_reverse(s):
-    words = s.split()
+    words = s.split(" ")
+    n = len(words)-1
     for i in range(len(words) - 1):
-        if len(words[i]) == len(words[i + 1]):
-            words[i], words[i + 1] = words[i + 1], words[i]
+        if len(words[i]) == len(words[n-i]):
+            #print(words[i])
+            #print(words[n-i])
+            words[i], words[n-i] = words[n-i], words[i]
             words[i] = words[i][::-1]
-            words[i + 1] = words[i + 1][::-1]
+            words[n - i] = words[n-i][::-1]
     return ' '.join(words)
 
 user_input = input("Enter a string: ")
