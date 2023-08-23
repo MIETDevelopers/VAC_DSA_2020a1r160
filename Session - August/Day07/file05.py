@@ -1,4 +1,4 @@
-# A program to represent a full binary tree
+# A program to represent a complete binary tree
 class Node:
     def __init__(self,data):
         self.data=data
@@ -15,13 +15,13 @@ class Tree:
             while True:
                 if data<temp.data:
                     if temp.left==None:
-                        temp.left=Node(data)
+                        temp.left=Node(data) # type: ignore
                         break
                     else:
                         temp=temp.left
                 elif data>temp.data:
                     if temp.right==None:
-                        temp.right=Node(data)
+                        temp.right=Node(data) # type: ignore
                         break
                     else:
                         temp=temp.right
