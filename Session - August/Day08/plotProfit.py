@@ -1,15 +1,11 @@
 def calculate_max_profit(s, n):
-    plots = set()
     max_profit = 0
-    
+    plots = set()
     for pair in s:
         plot1, plot2, profit = pair
         
-        if (plot1 >= n or plot2 >= n):
+        if (plot1 >= n or plot2 >= n) or plot1 in plots or plot2 in plots:
             return "no profit"
-        
-        if plot1 in plots or plot2 in plots:
-            continue
         
         plots.add(plot1)
         plots.add(plot2)
