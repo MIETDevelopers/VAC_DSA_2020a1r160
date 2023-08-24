@@ -1,1 +1,3 @@
 RnD - difference between C, C++, Java, Python
+    - is it possible to create an AR/VR using java or python or not
+    - one main difference between SQL and NoSQL
