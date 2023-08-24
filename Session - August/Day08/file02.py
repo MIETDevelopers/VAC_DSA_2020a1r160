@@ -13,7 +13,8 @@ def maxDepth(node):
 
         if (lDepth > rDepth):
             return lDepth + 1
-        
+        else :
+            return rDepth + 1
         # ek line rehti hai        
 
 def isBalanced(root):
