@@ -30,7 +30,7 @@ root.left = Node(20)
 root.right = Node(30)
 root.left.left = Node(40)
 root.left.right = Node(50)
-root.left.left.left= Node(60)
+root.left.left.left= Node(60) # type: ignore
 
 print(isBalanced(root))
 
