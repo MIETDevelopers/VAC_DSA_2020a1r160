@@ -22,4 +22,3 @@ for _ in range(3):
     
 result = calculate_max_profit(s, n)
 print("profit:", result)
-
