@@ -36,7 +36,4 @@ def bfs(visited, graph, node):
         queue.append(neighbour)
 
 # Driver Code
-bfs(visited, graph, 'B')
-
-
-#
+bfs(visited, graph, 'D')

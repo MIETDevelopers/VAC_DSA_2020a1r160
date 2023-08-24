@@ -22,7 +22,7 @@ def dfs(traversed, graph, vertex):
         for adjacent in graph[vertex]:
             dfs(traversed, graph, adjacent)
 print("Depth First Search:")
-dfs(traversed, graph, '10')
+dfs(traversed, graph, '2')
 
 
 
