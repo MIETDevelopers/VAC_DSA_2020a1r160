@@ -3,20 +3,6 @@
 / * - l to r
 + - - l to r
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 k+l-m*n+(o^p)*w/u/v*t+q
 
 step      data        stack                 postfix exp storage

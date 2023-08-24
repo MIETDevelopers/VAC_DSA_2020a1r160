@@ -1,4 +1,4 @@
-postfix to infix
+"""postfix to infix
 
 Postfix: abd/+ce*-
 
@@ -14,3 +14,4 @@ Step      Data              Stack            Output(Infix)
 9         -                 a+(b/d)-(c*e)
 10                                           a+(b/d)-(c*e)
  
+"""
