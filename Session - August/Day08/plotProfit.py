@@ -4,13 +4,13 @@ def calculate_max_profit(s, n):
     for pair in s:
         plot1, plot2, profit = pair
         
-        if (plot1 >= n or plot2 >= n) or plot1 in plots or plot2 in plots:
+        if (plot1 >= n or plot2 >= n) or (plot1 in plots and plot2 in plots):
             return "no profit"
         
         plots.add(plot1)
         plots.add(plot2)
         max_profit = max(max_profit, profit)
-    print(plots)
+    #print(plots)
     return max_profit
 
 
