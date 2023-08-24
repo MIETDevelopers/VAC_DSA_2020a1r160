@@ -1,6 +1,6 @@
 def calculate_max_profit(s, n):
     max_profit = 0
-    plots = set()
+    plots = set() #remove dupes
     for pair in s:
         plot1, plot2, profit = pair
         
@@ -13,12 +13,12 @@ def calculate_max_profit(s, n):
     #print(plots)
     return max_profit
 
+
 n = int(input("Enter the value of n: "))
-m = int(input("Enter the number of nested lists: "))
 s = []    
-for _ in range(m):
+for _ in range(3):
     plot1, plot2, profit = map(int, input("Enter plot numbers and profit: ").split())
     s.append([plot1, plot2, profit])
     
 result = calculate_max_profit(s, n)
-print("Profit:", result)
+print("profit:", result)
