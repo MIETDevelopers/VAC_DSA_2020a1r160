@@ -1,0 +1,16 @@
+postfix to infix
+
+Postfix: abd/+ce*-
+
+Step      Data              Stack            Output(Infix)
+1         a                 a
+2         b                 ab
+3         d                 abd
+4         /                 a (b/d)           b/d
+5         +                 a+(b/d)           a+(b/d)
+6         c                 a+(b/d)  c
+7         e                 a+(b/d)  c  e
+8         *                 a+(b/d) (c*e)    c*e
+9         -                 a+(b/d)-(c*e)
+10                                           a+(b/d)-(c*e)
+ 
