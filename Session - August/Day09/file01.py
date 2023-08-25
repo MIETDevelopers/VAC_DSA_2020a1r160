@@ -8,3 +8,5 @@ def panagram(str):
 string = input("Enter the string: ")
 if(panagram(string) == True):
     print("Yes, it is panagram")
+else:
+    print("No, it is not panagram")
