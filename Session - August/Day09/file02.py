@@ -1,4 +1,6 @@
-i=2
-while(i<=3):
-    print("%.3f"%i)
-    i+=0.001
+def printNum(n):
+    n = n*1000
+    for i in range(1, n+1):
+        print(i/1000)
+inp = int(input("Enter a number: "))
+printNum(inp)
